@@ -11,5 +11,3 @@ RUN yum -y install wget && \
     curl -sL https://rpm.nodesource.com/setup_12.x | bash - && \
     yum -y install nodejs && \
     npm i -g @angular/cli
-RUN adduser gitlab
-USER gitlab
