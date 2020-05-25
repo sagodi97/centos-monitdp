@@ -13,6 +13,4 @@ RUN yum -y install wget && \
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm && \
     yum -y localinstall google-chrome-stable_current_x86_64.rpm && \
     npm i -g @angular/cli
-RUN yum install sudo -y
-RUN adduser gitlab && echo "gitlab ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-USER gitlab
+RUN adduser gitlab
